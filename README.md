@@ -1,0 +1,1 @@
+Welcome to my public project repository. This is a collection of small personal and pedagogical projects I've completed over time.More projects will be added as time allows. Some code had not been tested or debugged.
