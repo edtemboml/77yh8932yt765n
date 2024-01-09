@@ -20,8 +20,6 @@ oc_diff,
 prev_day_h, 
 prev_day_l,
 prev_day_o,
---gapup_lh,
---gapup_lc,
 prev_day_close, 
 prev_day_oc,
 trend_3_days
@@ -29,8 +27,6 @@ trend_3high_days,
 trend_3low_days, 
 trend_3open_days,
 trend_3oc_days
---trend_3gapup_lh_days,
---trend_3gapup_lc_days
 
 from 
 ai4f.model_data
