@@ -1,0 +1,11 @@
+   mkdir $ML_FOLDER
+    cd $ML_FOLDER
+    touch Dockerfile
+    mkdir training
+    touch training/model.py
+    gcloud config list --format 'value(core.project)'
+   
+    export PROJECT_ID=$GOOGLE_CLOUD_PROJECT
+    IMAGE_URI="gcr.io/$PROJECT_ID/$HYPERTUNING_IMAGE"
+    docker build ./ -t $IMAGE_URI
+ 

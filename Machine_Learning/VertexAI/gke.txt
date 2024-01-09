@@ -1,0 +1,9 @@
+
+
+gcloud container clusters create "photoalbum-cluster" \
+    --scopes "https://www.googleapis.com/auth/cloud-platform" \
+    --num-nodes "3"  --accelerator=type=nvidia-tesla-t4,gpu-sharing-strategy=time-sharing --disk-type=pd-ssd --enable-autorepair --enable-image-streaming --enable-vertical-pod-autoscaling \
+    --network=min5-us --node-locations=us-central-1f,us-central1-a,us-central1-c --preemptible --spot --enable-autoprovisioning --max-cpu=60 --max-memory=96  --min-cpu=0 --min-memory=0 --enable-autoscaling \
+    --min-nodes=0 --total-min-nodes=0 \
+    
+

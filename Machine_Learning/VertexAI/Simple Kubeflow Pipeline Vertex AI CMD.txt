@@ -1,0 +1,10 @@
+    1  gsutil mb gs://qwiklabs-gcp-02-7b0e76748afb
+    2  touch emptyfile1
+    3  touch emptyfile2
+    4  gsutil cp emptyfile1 gs://qwiklabs-gcp-02-7b0e76748afb/pipeline-output/emptyfile1
+    5  gsutil cp emptyfile2 gs://qwiklabs-gcp-02-7b0e76748afb/pipeline-input/emptyfile2
+    6  wget https://storage.googleapis.com/cloud-training/dataengineering/lab_assets/ai_pipelines/basic_pipeline.json
+    7  sed -i 's/PROJECT_ID/qwiklabs-gcp-02-7b0e76748afb/g' basic_pipeline.json
+    8  tail -20 basic_pipeline.json
+    9  more basic_pipeline.json
+   10  gsutil cp basic_pipeline.json gs://qwiklabs-gcp-02-7b0e76748afb/pipeline-input/basic_pipeline.json

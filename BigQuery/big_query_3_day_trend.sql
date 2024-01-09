@@ -1,0 +1,112 @@
+WITH RAW AS 
+(SELECT LAG(close, 1) over (order by date) as prev_day_close, 
+        LAG(close, 2) over (order by date) as prev_day2_close, 
+        LAG(close, 3) over (order by date) as prev_day3_close, 
+        LAG(close, 4) over (order by date) as prev_day4_close,
+
+        LAG(close - open, 1) over (order by date) as prev_day_oc, 
+        LAG(close - open, 2) over (order by date) as prev_day2_oc, 
+        LAG(close - open, 3) over (order by date) as prev_day3_oc, 
+        LAG(close - open, 4) over (order by date) as prev_day4_oc,  
+        
+        LAG(open, 1) over (order by date) as prev_day_o, 
+        LAG(open, 2) over (order by date) as prev_day2_o, 
+        LAG(open, 3) over (order by date) as prev_day3_o, 
+        LAG(open, 4) over (order by date) as prev_day4_o,
+
+        LAG(high, 1) over (order by date) as prev_day_h, 
+        LAG(high, 2) over (order by date) as prev_day2_h, 
+        LAG(high, 3) over (order by date) as prev_day3_h, 
+        LAG(high, 4) over (order by date) as prev_day4_h,
+
+        LAG(low, 1) over (order by date) as prev_day_l, 
+        LAG(low, 2) over (order by date) as prev_day2_l, 
+        LAG(low, 3) over (order by date) as prev_day3_l, 
+        LAG(low, 4) over (order by date) as prev_day4_l,
+               
+        date, 
+        close,
+        high, 
+        low,
+        open
+ from ai4f.aapl10y
+), 
+
+trend_values as 
+( SELECT IF(prev_day_close - prev_day2_close> 0, 1, -1) as day_1_result, 
+         IF(prev_day2_close - prev_day3_close> 0, 1, -1) as day_2_result, 
+         IF(prev_day3_close - prev_day4_close> 0, 1, -1) as day_3_result, 
+         
+         IF(prev_day_h - prev_day2_h> 0, 1, -1) as day_1high_result, 
+         IF(prev_day2_h - prev_day3_h> 0, 1, -1) as day_2high_result, 
+         IF(prev_day3_h - prev_day4_h> 0, 1, -1) as day_3high_result,
+         
+         IF(prev_day_l - prev_day2_l> 0, 1, -1) as day_1low_result, 
+         IF(prev_day2_l - prev_day3_l> 0, 1, -1) as day_2low_result, 
+         IF(prev_day3_l - prev_day4_l> 0, 1, -1) as day_3low_result,
+         
+         IF(prev_day_o - prev_day2_o> 0, 1, -1) as day_1open_result, 
+         IF(prev_day2_o - prev_day3_o> 0, 1, -1) as day_2open_result, 
+         IF(prev_day3_o - prev_day4_o> 0, 1, -1) as day_3open_result,
+
+         IF(prev_day_oc - prev_day2_oc> 0, 1, -1) as day_1oc_diff, 
+         IF(prev_day2_oc - prev_day3_oc> 0, 1, -1) as day_2oc_diff, 
+         IF(prev_day3_oc - prev_day4_oc> 0, 1, -1) as day_3oc_diff,
+
+         IF(prev_day_h - prev_day2_h  > 0, 1, -1) as day_1high_diff, 
+         IF(prev_day2_h - prev_day3_h > 0, 1, -1) as day_2high_diff, 
+         IF(prev_day3_h - prev_day4_h > 0, 1, -1) as day_3high_diff, 
+
+         IF(prev_day_l - prev_day2_close  > 0, 1, -1) as day_1gapup_lh, 
+         IF(prev_day2_l- prev_day3_h > 0, 1, -1) as day_2gapup_lh, 
+         IF(prev_day3_l - prev_day4_h > 0, 1, -1) as day_3gapup_lh, 
+
+         IF(prev_day_l - prev_day2_close  > 0, 1, -1) as day_1gapup_lc, 
+         IF(prev_day2_l- prev_day3_close  > 0, 1, -1)  as day_2gapup_lc, 
+         IF(prev_day3_l - prev_day4_close > 0, 1, -1) as day_3gapup_lc,
+         
+         
+          date, 
+         close, 
+         open, 
+         high, 
+         low
+   from RAW
+)
+select  a.date, 
+         a.close, 
+         a.open, 
+         a.high, 
+         a.low , 
+        b.prev_day_close, 
+        b.prev_day_o       
+        b.prev_day_oc, 
+        b.prev_day_h, 
+        b.prev_day_l, 
+                       
+       a.close - a.open as oc_diff, 
+       a.low - b.prev_day_h as gapup_lh, 
+       a.low - b.prev_day_close as gapup_lc,
+       
+       /* open trend*/
+       IF (a.day_1open_result + a.day_2open_result + a.day_3open_result > 0, 1, -1) AS trend_3open_days,
+       
+       /* low trend*/
+       IF (a.day_1low_result + a.day_2low_result + a.day_3low_result > 0, 1, -1) AS trend_3low_days,
+       
+       /* hih trend*/
+       IF (a.day_1high_result + a.day_2high_result + a.day_3high_result > 0, 1, -1) AS trend_3high_days,
+
+       /* close trend*/
+       IF (a.day_1_result + a.day_2_result + a.day_3_result > 0, 1, -1) AS trend_3_days,
+
+       /*open-close trend*/ 
+       IF (a.day_1oc_diff + a.day_2oc_diff + a.day_3oc_diff > 0, 1, -1) AS trend_3oc_days, 
+
+       /* day low - prevday high trend */
+       IF (a.day_1gapup_lh + a.day_2gapup_lh + a.day_3gapup_lh > 0, 1, -1) AS trend_3gapup_lh_days, 
+
+       /* day low - prevday close trend */
+       IF (a.day_1gapup_lc + a.day_2gapup_lc + a.day_3gapup_lc > 0, 1, -1) AS trend_3gapup_lc_days
+ from 
+trend_values a inner join raw b on a.date = b.date

@@ -1,0 +1,61 @@
+Big query to df  to using df.loc to split the data 
+
+#### load CSV data to big query 
+%%bash
+
+bq mk -d ai4f
+bq load --autodetect --source_format=CSV ai4f.AAPL10Y gs://cloud-training/ai4f/AAPL10Y.csv
+
+--------------------------------------------------------------------------------------------------------------
+
+------------------pull the data needed using big query into a pandas dataframe --------------------------------
+%%bigquery df
+WITH
+  raw AS (
+  SELECT
+    date,
+    close,
+    LAG(close, 1) OVER(ORDER BY date) AS min_1_close,
+    LAG(close, 2) OVER(ORDER BY date) AS min_2_close,
+    LAG(close, 3) OVER(ORDER BY date) AS min_3_close,
+    LAG(close, 4) OVER(ORDER BY date) AS min_4_close
+  FROM
+    `ai4f.AAPL10Y`
+  ORDER BY
+    date DESC ),
+  raw_plus_trend AS (
+  SELECT
+    date,
+    close,
+    min_1_close,
+    min_2_close,
+    min_3_close,
+    min_4_close,
+    IF (min_1_close - min_2_close > 0, 1, -1) AS min_1_trend,
+    IF (min_2_close - min_3_close > 0, 1, -1) AS min_2_trend,
+    IF (min_3_close - min_4_close > 0, 1, -1) AS min_3_trend
+  FROM
+    raw ),
+  train_data AS (
+  SELECT
+    date,
+    close,
+    min_1_close AS day_prev_close,
+    min_2_close AS two_day_prev_close,
+    min_3_close AS thress_day_prev_close,
+    min_4_close AS four_day_prev_close,
+    IF (min_1_trend + min_2_trend + min_3_trend > 0, 1, -1) AS trend_3_day
+  FROM
+    raw_plus_trend
+  ORDER BY
+    date ASC )
+SELECT
+  *
+FROM
+  train_data
+
+
+-----------------------TRAIN-TEST-SPLIT EXAMPLE FROM PANDAS DATAFRAME-----------
+X_train, X_test = df.loc[:2000, features], df.loc[2000:, features]
+y_train, y_test = df.loc[:2000, target], df.loc[2000:, target]
+
