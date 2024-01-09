@@ -1,0 +1,312 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_3.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_3.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_3.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368689Z"
+    },
+    {
+      "id": 2,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_10.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_10.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_10.jpg",
+      "date_captured": "2024-01-07T15:14:14.836871Z"
+    },
+    {
+      "id": 3,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_1.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_1.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_1.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368845Z"
+    },
+    {
+      "id": 4,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_2.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_2.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_2.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368653Z"
+    },
+    {
+      "id": 5,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_2.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_2.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_2.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368775Z"
+    },
+    {
+      "id": 6,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_4.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_4.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_4.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368958Z"
+    },
+    {
+      "id": 7,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_6.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_6.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_6.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368866Z"
+    },
+    {
+      "id": 8,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_5.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_5.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_5.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368895Z"
+    },
+    {
+      "id": 9,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_3.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_3.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_3.jpg",
+      "date_captured": "2024-01-07T15:14:14.836858Z"
+    },
+    {
+      "id": 10,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_5.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_5.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_5.jpg",
+      "date_captured": "2024-01-07T15:14:14.836863Z"
+    },
+    {
+      "id": 11,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_7.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_7.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$132$$image_7.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368918Z"
+    },
+    {
+      "id": 12,
+      "width": 300,
+      "height": 300,
+      "file_name": "carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_1.jpg",
+      "coco_url": "AmlDatastore://azuremlcardsuk_ds1/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_1.jpg",
+      "absolute_url": "https://azureml5mcarsuksa1.blob.core.windows.net/azuremlcarsukblobs/carsimages/34792453.1/resized_DVM/Lamborghini/Aventador/2019/Black/Lamborghini$$Aventador$$2019$$Black$$45_1$$129$$image_1.jpg",
+      "date_captured": "2024-01-07T15:14:14.8368938Z"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "image_id": 1,
+      "area": 0.417,
+      "bbox": [
+        0.01239067055393586,
+        0.2536443148688047,
+        0.9868804664723032,
+        0.42274052478134105
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 8.38,
+      "label_creation_time": "2024-01-07T15:15:18.8872133Z"
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "image_id": 2,
+      "area": 0.694,
+      "bbox": [
+        0.008017492711370262,
+        0.13994169096209913,
+        0.9919825072886297,
+        0.6997084548104957
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 8.35,
+      "label_creation_time": "2024-01-07T15:15:27.6614932Z"
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "image_id": 3,
+      "area": 0.386,
+      "bbox": [
+        0.01239067055393586,
+        0.3119533527696793,
+        0.9876093294460642,
+        0.39067055393586003
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 7.77,
+      "label_creation_time": "2024-01-07T15:15:45.2401516Z"
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "image_id": 4,
+      "area": 0.445,
+      "bbox": [
+        0.002186588921282799,
+        0.2696793002915452,
+        0.9978134110787172,
+        0.4460641399416909
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 6.65,
+      "label_creation_time": "2024-01-07T15:15:09.7969586Z"
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "image_id": 5,
+      "area": 0.374,
+      "bbox": [
+        0.002186588921282799,
+        0.3323615160349854,
+        0.9978134110787172,
+        0.3746355685131195
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 8.49,
+      "label_creation_time": "2024-01-07T15:15:36.7137755Z"
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "image_id": 6,
+      "area": 0.457,
+      "bbox": [
+        0.01967930029154519,
+        0.260932944606414,
+        0.9803206997084548,
+        0.4664723032069971
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 7.22,
+      "label_creation_time": "2024-01-07T15:16:43.9916428Z"
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "image_id": 7,
+      "area": 0.628,
+      "bbox": [
+        0.009475218658892129,
+        0.18658892128279883,
+        0.9905247813411079,
+        0.6341107871720117
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 9.74,
+      "label_creation_time": "2024-01-07T15:15:55.6678743Z"
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "image_id": 8,
+      "area": 0.371,
+      "bbox": [
+        0.013848396501457727,
+        0.34110787172011664,
+        0.9861516034985423,
+        0.3760932944606414
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 17.32,
+      "label_creation_time": "2024-01-07T15:16:13.5583751Z"
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "image_id": 9,
+      "area": 0.377,
+      "bbox": [
+        0.028425655976676383,
+        0.30174927113702626,
+        0.9650145772594753,
+        0.3906705539358601
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 13.98,
+      "label_creation_time": "2024-01-07T15:14:53.1437147Z"
+    },
+    {
+      "id": 10,
+      "category_id": 1,
+      "image_id": 10,
+      "area": 0.632,
+      "bbox": [
+        0.00510204081632653,
+        0.16034985422740525,
+        0.9948979591836735,
+        0.6355685131195336
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 8.69,
+      "label_creation_time": "2024-01-07T15:15:02.5363718Z"
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "image_id": 11,
+      "area": 0.575,
+      "bbox": [
+        0.006559766763848397,
+        0.20699708454810495,
+        0.9934402332361516,
+        0.5787172011661808
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 9.1,
+      "label_creation_time": "2024-01-07T15:16:23.3773143Z"
+    },
+    {
+      "id": 12,
+      "category_id": 1,
+      "image_id": 12,
+      "area": 0.458,
+      "bbox": [
+        0.0036443148688046646,
+        0.2755102040816326,
+        0.9963556851311953,
+        0.4591836734693878
+      ],
+      "labeler": "Contact .mT",
+      "approved_by": "Contact .mT",
+      "labeling_time_in_seconds": 12.37,
+      "label_creation_time": "2024-01-07T15:16:36.336744Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "2019_Lamborghini_Aventador"
+    }
+  ]
+}
